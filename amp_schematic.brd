@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2642,6 +2642,9 @@ design rules under a new name.</description>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -2742,44 +2745,87 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1+" library="resistor" library_urn="urn:adsk.eagle:library:348" package="E3,5-8" package3d_urn="urn:adsk.eagle:package:25842/1" value="220uF" x="39.751" y="17.018" rot="R90"/>
-<element name="C1-" library="resistor" library_urn="urn:adsk.eagle:library:348" package="E3,5-8" package3d_urn="urn:adsk.eagle:package:25842/1" value="220uF" x="53.721" y="17.018" rot="R270"/>
-<element name="C2A" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="0.1uF" x="2.54" y="35.56" rot="R90">
+<element name="C1+" library="resistor" library_urn="urn:adsk.eagle:library:348" package="E3,5-8" package3d_urn="urn:adsk.eagle:package:25842/1" value="220uF" x="39.751" y="17.018" smashed="yes" rot="R90">
+<attribute name="NAME" x="39.37" y="12.827" size="1.27" layer="25" ratio="10" rot="R180"/>
+</element>
+<element name="C1-" library="resistor" library_urn="urn:adsk.eagle:library:348" package="E3,5-8" package3d_urn="urn:adsk.eagle:package:25842/1" value="220uF" x="53.721" y="17.018" smashed="yes" rot="R270">
+<attribute name="NAME" x="53.594" y="22.225" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="C2A" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="0.1uF" x="2.54" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="3.429" y="28.321" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="SPICEPREFIX" value="C" x="2.54" y="35.56" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C2B" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="0.1uF" x="24.13" y="30.48" rot="R90">
+<element name="C2B" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="0.1uF" x="24.13" y="30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.289" y="26.289" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="SPICEPREFIX" value="C" x="24.13" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="J1" library="con-jack" library_urn="urn:adsk.eagle:library:154" package="DCJ0202" package3d_urn="urn:adsk.eagle:package:7491/1" value="DCJ0202" x="52.07" y="7.62">
+<element name="J1" library="con-jack" library_urn="urn:adsk.eagle:library:154" package="DCJ0202" package3d_urn="urn:adsk.eagle:package:7491/1" value="DCJ0202" x="52.07" y="7.62" smashed="yes">
 <attribute name="MF" value="" x="52.07" y="7.62" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="52.07" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="46.99" y="2.54" size="1.27" layer="25" rot="R90"/>
 <attribute name="OC_FARNELL" value="unknown" x="52.07" y="7.62" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="52.07" y="7.62" size="1.778" layer="27" display="off"/>
 </element>
-<element name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="8.89" y="54.61"/>
-<element name="R1" library="pot" library_urn="urn:adsk.eagle:library:331" package="B25U" package3d_urn="urn:adsk.eagle:package:22685/1" value="" x="7.62" y="44.45"/>
-<element name="R1+" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="4.7K" x="45.72" y="16.51" rot="R270"/>
-<element name="R1-" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="4.7K" x="48.26" y="16.51" rot="R90"/>
-<element name="R2" library="pot" library_urn="urn:adsk.eagle:library:331" package="B25U" package3d_urn="urn:adsk.eagle:package:22685/1" value="" x="19.05" y="44.45"/>
-<element name="R2A" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="100k" x="5.08" y="29.21" rot="R90"/>
-<element name="R2B" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="100k" x="21.59" y="29.21" rot="R270"/>
-<element name="R3A" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="1k" x="5.08" y="34.29" rot="R270"/>
-<element name="R3B" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="1k" x="19.05" y="31.75" rot="R270"/>
-<element name="R5A" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="0" x="39.37" y="41.91" rot="R180"/>
-<element name="R5B" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="0" x="39.37" y="48.26"/>
-<element name="RLED" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="10K" x="8.89" y="49.53"/>
-<element name="U$1" library="OPA2132PA" package="PTR902" value="PTR902-2020K-A103" x="30" y="54.61" rot="R90"/>
-<element name="U1" library="OPA2132PA" package="DIP254P762X508-8" value="OPA2132PA" x="16.51" y="27.94">
+<element name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="8.89" y="54.61" smashed="yes">
+<attribute name="NAME" x="12.065" y="55.1434" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="12.0904" y="52.8066" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R1" library="pot" library_urn="urn:adsk.eagle:library:331" package="B25U" package3d_urn="urn:adsk.eagle:package:22685/1" value="" x="7.62" y="44.45" smashed="yes">
+<attribute name="NAME" x="12.7" y="46.355" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="4.4704" y="39.37" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R1+" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="4.7K" x="45.72" y="16.51" smashed="yes" rot="R270">
+<attribute name="NAME" x="43.5864" y="12.5984" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="R1-" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="4.7K" x="48.26" y="16.51" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.3936" y="20.4216" size="1.27" layer="25" ratio="10" rot="R180"/>
+</element>
+<element name="R2" library="pot" library_urn="urn:adsk.eagle:library:331" package="B25U" package3d_urn="urn:adsk.eagle:package:22685/1" value="" x="19.05" y="44.45" smashed="yes">
+<attribute name="NAME" x="15.24" y="45.085" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="15.9004" y="39.37" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="R2A" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="100k" x="5.08" y="29.21" smashed="yes" rot="R90">
+<attribute name="NAME" x="7.2136" y="26.7716" size="1.27" layer="25" ratio="10" rot="R180"/>
+</element>
+<element name="R2B" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="100k" x="21.59" y="29.21" smashed="yes" rot="R270">
+<attribute name="NAME" x="18.1864" y="25.2984" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="R3A" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="1k" x="5.08" y="34.29" smashed="yes" rot="R270">
+<attribute name="NAME" x="4.9784" y="40.2336" size="1.27" layer="25" ratio="10" rot="R270"/>
+</element>
+<element name="R3B" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="1k" x="19.05" y="31.75" smashed="yes" rot="R270">
+<attribute name="NAME" x="18.1864" y="36.7284" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="R5A" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="0" x="39.37" y="41.91" smashed="yes" rot="R180">
+<attribute name="NAME" x="41.5036" y="40.7416" size="1.27" layer="25" ratio="10" rot="R180"/>
+</element>
+<element name="R5B" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="0" x="39.37" y="48.26" smashed="yes">
+<attribute name="NAME" x="37.2364" y="49.4284" size="1.27" layer="25" ratio="10"/>
+</element>
+<element name="RLED" library="resistor" library_urn="urn:adsk.eagle:library:348" package="0204V" package3d_urn="urn:adsk.eagle:package:25948/1" value="10K" x="8.89" y="49.53" smashed="yes">
+<attribute name="NAME" x="3.7084" y="54.2036" size="1.27" layer="25" ratio="10" rot="R270"/>
+</element>
+<element name="VOL" library="OPA2132PA" package="PTR902" value="PTR902-2020K-A103" x="30" y="54.61" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.92" y="44.45" size="1.27" layer="25" rot="R90"/>
+</element>
+<element name="OPAMP" library="OPA2132PA" package="DIP254P762X508-8" value="OPA2132PA" x="16.51" y="27.94" smashed="yes">
 <attribute name="DESCRIPTION" value=" Operational amplifier; 8MHz; 2.5÷18VDC; Channels: 2; DIP8 " x="16.51" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="DIGI-KEY_PART_NUMBER" value="OPA2132PA-ND" x="16.51" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/texas-instruments/OPA2132PA/OPA2132PA-ND/301149?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol" x="16.51" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Texas Instruments" x="16.51" y="27.94" size="1.778" layer="27" display="off"/>
 <attribute name="MP" value="OPA2132PA" x="16.51" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="6.67806875" y="22.43061875" size="2.08331875" layer="25" ratio="10" rot="SR0"/>
 <attribute name="PACKAGE" value="PDIP-8 Texas Instruments" x="16.51" y="27.94" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$2" library="OPA2132PA" package="STEREOJACK" value="STEROJACK" x="50.8" y="54.61" rot="R90"/>
-<element name="LEFT" library="OPA2132PA" package="RCAJACK" value="RCAJACK" x="6.35" y="3.81" rot="R90"/>
-<element name="RIGHT" library="OPA2132PA" package="RCAJACK" value="RCAJACK" x="22.86" y="3.81" rot="R90"/>
+<element name="OUTPUT" library="OPA2132PA" package="STEREOJACK" value="STEROJACK" x="50.8" y="54.61" smashed="yes" rot="R90">
+<attribute name="NAME" x="43.18" y="33.02" size="1.27" layer="25"/>
+</element>
+<element name="LEFT" library="OPA2132PA" package="RCAJACK" value="RCAJACK" x="6.35" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="13.97" y="3.81" size="1.27" layer="25" rot="R90"/>
+</element>
+<element name="RIGHT" library="OPA2132PA" package="RCAJACK" value="RCAJACK" x="22.86" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="30.48" y="3.81" size="1.27" layer="25" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -2794,34 +2840,30 @@ design rules under a new name.</description>
 <contactref element="C1-" pad="+"/>
 <contactref element="R2A" pad="1"/>
 <contactref element="R3A" pad="1"/>
-<contactref element="U$1" pad="1A"/>
+<contactref element="VOL" pad="1A"/>
 <contactref element="R2B" pad="1"/>
 <contactref element="R3B" pad="1"/>
-<contactref element="U$1" pad="1B"/>
-<contactref element="U$2" pad="S"/>
-<contactref element="U$2" pad="SN"/>
-<contactref element="RIGHT" pad="1"/>
+<contactref element="VOL" pad="1B"/>
+<contactref element="OUTPUT" pad="S"/>
+<contactref element="OUTPUT" pad="SN"/>
 <contactref element="LEFT" pad="1"/>
-<wire x1="45.1" y1="54.61" x2="56.5" y2="54.61" width="0" layer="19" extent="1-1"/>
-<wire x1="32.5" y1="54.61" x2="45.1" y2="54.61" width="0" layer="19" extent="1-1"/>
-<wire x1="32.5" y1="52.11" x2="32.5" y2="54.61" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="33.02" x2="32.5" y2="52.11" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="30.48" x2="19.05" y2="33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="5.08" y1="35.56" x2="19.05" y2="33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="5.08" y1="27.94" x2="5.08" y2="35.56" width="0" layer="19" extent="1-1"/>
-<wire x1="39.751" y1="18.796" x2="21.59" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="17.78" x2="39.751" y2="18.796" width="0" layer="19" extent="1-1"/>
-<wire x1="48.26" y1="17.78" x2="45.72" y2="17.78" width="0" layer="19" extent="1-1"/>
-<wire x1="53.721" y1="18.796" x2="48.26" y2="17.78" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="2.81" x2="5.08" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="22.86" y1="2.81" x2="6.35" y2="2.81" width="0" layer="19" extent="1-1"/>
+<contactref element="RIGHT" pad="1"/>
+<polygon width="0.1524" layer="16">
+<vertex x="0" y="59.69"/>
+<vertex x="0" y="1.27"/>
+<vertex x="1.27" y="0"/>
+<vertex x="58.42" y="0"/>
+<vertex x="59.69" y="1.27"/>
+<vertex x="59.69" y="58.42"/>
+<vertex x="58.42" y="59.69"/>
+</polygon>
 </signal>
 <signal name="V+">
 <contactref element="RLED" pad="2"/>
 <contactref element="C1+" pad="+"/>
 <contactref element="R1+" pad="2"/>
-<contactref element="U$1" pad="2"/>
-<contactref element="U1" pad="8"/>
+<contactref element="VOL" pad="2"/>
+<contactref element="OPAMP" pad="8"/>
 <wire x1="45.72" y1="15.24" x2="39.751" y2="15.24" width="0.4064" layer="1"/>
 <wire x1="27.5" y1="45.86" x2="27.5" y2="38.93" width="0.4064" layer="1"/>
 <wire x1="27.5" y1="22.03" x2="27.5" y2="38.93" width="0.4064" layer="1"/>
@@ -2838,7 +2880,7 @@ design rules under a new name.</description>
 <contactref element="C1-" pad="-"/>
 <contactref element="R1-" pad="1"/>
 <contactref element="J1" pad="3"/>
-<contactref element="U1" pad="4"/>
+<contactref element="OPAMP" pad="4"/>
 <wire x1="52.07" y1="4.62" x2="52.07" y2="6.35" width="0.4064" layer="1"/>
 <wire x1="52.07" y1="6.35" x2="54.61" y2="8.89" width="0.4064" layer="1"/>
 <wire x1="54.61" y1="8.89" x2="54.61" y2="14.351" width="0.4064" layer="1"/>
@@ -2860,14 +2902,14 @@ design rules under a new name.</description>
 <wire x1="48.72" y1="4.62" x2="52.07" y2="4.62" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$4">
-<contactref element="U1" pad="3"/>
+<contactref element="OPAMP" pad="3"/>
 <contactref element="R2A" pad="2"/>
 <contactref element="C2A" pad="1"/>
 <wire x1="8.89" y1="30.48" x2="5.08" y2="30.48" width="0.4064" layer="1"/>
 <wire x1="5.08" y1="30.48" x2="2.54" y2="33.02" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$5">
-<contactref element="U1" pad="2"/>
+<contactref element="OPAMP" pad="2"/>
 <contactref element="R3A" pad="2"/>
 <contactref element="R1" pad="E"/>
 <contactref element="R1" pad="S"/>
@@ -2879,7 +2921,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="SW1">
 <contactref element="J1" pad="1"/>
-<contactref element="U$1" pad="1"/>
+<contactref element="VOL" pad="1"/>
 <wire x1="46.99" y1="13.97" x2="50.24" y2="10.72" width="0.4064" layer="1"/>
 <wire x1="50.24" y1="10.72" x2="52.07" y2="10.72" width="0.4064" layer="1"/>
 <wire x1="32.58" y1="45.86" x2="32.58" y2="23.3" width="0.4064" layer="1"/>
@@ -2890,7 +2932,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$2">
 <contactref element="C2A" pad="2"/>
-<contactref element="U$1" pad="2A"/>
+<contactref element="VOL" pad="2A"/>
 <wire x1="30" y1="54.61" x2="29.21" y2="53.34" width="0.4064" layer="1"/>
 <wire x1="29.21" y1="53.34" x2="29.1738" y2="53.3038" width="0.4064" layer="1"/>
 <wire x1="27.00550625" y1="53.3038" x2="24.50170625" y2="50.8" width="0.4064" layer="1"/>
@@ -2904,7 +2946,7 @@ design rules under a new name.</description>
 <wire x1="5.08" y1="48.26" x2="2.54" y2="45.72" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$3">
-<contactref element="U1" pad="5"/>
+<contactref element="OPAMP" pad="5"/>
 <contactref element="C2B" pad="1"/>
 <contactref element="R2B" pad="2"/>
 <wire x1="16.51" y1="27.94" x2="21.59" y2="27.94" width="0.4064" layer="1"/>
@@ -2912,7 +2954,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$6">
 <contactref element="C2B" pad="2"/>
-<contactref element="U$1" pad="2B"/>
+<contactref element="VOL" pad="2B"/>
 <wire x1="24.13" y1="33.02" x2="29.21" y2="33.02" width="0.4064" layer="16"/>
 <wire x1="29.21" y1="33.02" x2="30.48" y2="34.29" width="0.4064" layer="16"/>
 <wire x1="30.48" y1="34.29" x2="30.48" y2="39.37" width="0.4064" layer="16"/>
@@ -2921,7 +2963,7 @@ design rules under a new name.</description>
 <wire x1="30.48" y1="50.8" x2="30" y2="52.11" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$7">
-<contactref element="U1" pad="6"/>
+<contactref element="OPAMP" pad="6"/>
 <contactref element="R3B" pad="2"/>
 <contactref element="R2" pad="E"/>
 <contactref element="R2" pad="S"/>
@@ -2931,67 +2973,75 @@ design rules under a new name.</description>
 <wire x1="13.97" y1="33.02" x2="16.51" y2="30.48" width="0.4064" layer="1"/>
 <wire x1="16.51" y1="30.48" x2="19.05" y2="30.48" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$8">
-<contactref element="U$1" pad="3A"/>
-<wire x1="1.27" y1="53.34" x2="6.7108" y2="58.7808" width="0.4064" layer="1"/>
-<wire x1="26.67" y1="54.61" x2="27.5" y2="54.61" width="0.4064" layer="1"/>
-<wire x1="6.7108" y1="58.7808" x2="22.4992" y2="58.7808" width="0.4064" layer="1"/>
-<wire x1="22.4992" y1="58.7808" x2="26.67" y2="54.61" width="0.4064" layer="1"/>
-<contactref element="LEFT" pad="2"/>
-<wire x1="6.35" y1="7.31" x2="1.27" y2="12.39" width="0.4064" layer="1"/>
-<wire x1="1.27" y1="12.39" x2="1.27" y2="53.34" width="0.4064" layer="1"/>
-</signal>
-<signal name="N$10">
-<contactref element="U$1" pad="3B"/>
-<via x="26.67" y="17.78" extent="1-16" drill="0.35"/>
-<wire x1="26.67" y1="17.78" x2="26.67" y2="27.94" width="0.4064" layer="16"/>
-<via x="29.21" y="30.48" extent="1-16" drill="0.35"/>
-<wire x1="29.21" y1="50.4" x2="27.5" y2="52.11" width="0.4064" layer="1"/>
-<wire x1="26.67" y1="27.94" x2="29.21" y2="30.48" width="0.4064" layer="16"/>
-<wire x1="29.21" y1="30.48" x2="29.21" y2="50.4" width="0.4064" layer="1"/>
-<contactref element="RIGHT" pad="2"/>
-<wire x1="22.86" y1="7.31" x2="22.86" y2="12.7" width="0.4064" layer="1"/>
-<wire x1="22.86" y1="12.7" x2="26.67" y2="16.51" width="0.4064" layer="1"/>
-<wire x1="26.67" y1="16.51" x2="26.67" y2="17.78" width="0.4064" layer="1"/>
-</signal>
 <signal name="N$13">
 <contactref element="R2" pad="A"/>
-<contactref element="U1" pad="7"/>
+<contactref element="OPAMP" pad="7"/>
 <contactref element="R5B" pad="1"/>
-<wire x1="21.59" y1="43.561" x2="15.24" y2="37.211" width="0.4064" layer="1"/>
-<wire x1="15.24" y1="34.29" x2="16.51" y2="33.02" width="0.4064" layer="1"/>
-<wire x1="15.24" y1="37.211" x2="15.24" y2="34.29" width="0.4064" layer="1"/>
-<wire x1="21.59" y1="43.561" x2="24.511" y2="43.561" width="0.4064" layer="1"/>
-<wire x1="24.511" y1="43.561" x2="25.4" y2="44.45" width="0.4064" layer="1"/>
-<via x="25.4" y="44.45" extent="1-16" drill="0.35"/>
-<wire x1="25.4" y1="44.45" x2="26.3062" y2="45.3562" width="0.4064" layer="16"/>
-<wire x1="26.3062" y1="45.3562" x2="26.3062" y2="46.35449375" width="0.4064" layer="16"/>
-<wire x1="28.21170625" y1="48.26" x2="26.3062" y2="46.35449375" width="0.4064" layer="16"/>
 <wire x1="38.1" y1="48.26" x2="28.21170625" y2="48.26" width="0.4064" layer="16"/>
+<wire x1="21.59" y1="43.561" x2="21.971" y2="43.18" width="0.4064" layer="1"/>
+<wire x1="21.971" y1="43.18" x2="24.13" y2="43.18" width="0.4064" layer="1"/>
+<wire x1="16.51" y1="33.02" x2="15.24" y2="34.29" width="0.4064" layer="1"/>
+<wire x1="15.24" y1="34.29" x2="15.24" y2="36.83" width="0.4064" layer="1"/>
+<wire x1="17.78" y1="39.37" x2="21.59" y2="39.37" width="0.4064" layer="1"/>
+<wire x1="21.59" y1="39.37" x2="24.13" y2="41.91" width="0.4064" layer="1"/>
+<wire x1="24.13" y1="41.91" x2="24.13" y2="43.18" width="0.4064" layer="1"/>
+<wire x1="15.24" y1="36.83" x2="17.78" y2="39.37" width="0.4064" layer="1"/>
+<wire x1="28.21170625" y1="48.26" x2="25.4" y2="48.26" width="0.4064" layer="16"/>
+<wire x1="25.4" y1="48.26" x2="24.13" y2="46.99" width="0.4064" layer="16"/>
+<wire x1="24.13" y1="46.99" x2="24.13" y2="45.72" width="0.4064" layer="16"/>
+<via x="24.13" y="45.72" extent="1-16" drill="0.35" diameter="1.3"/>
+<wire x1="24.13" y1="45.72" x2="24.13" y2="43.18" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$15">
-<contactref element="U1" pad="1"/>
+<contactref element="OPAMP" pad="1"/>
 <contactref element="R1" pad="A"/>
 <contactref element="R5A" pad="2"/>
 <wire x1="10.16" y1="43.561" x2="10.16" y2="36.83" width="0.4064" layer="1"/>
 <wire x1="10.16" y1="36.83" x2="8.89" y2="35.56" width="0.4064" layer="1"/>
-<wire x1="14.41275625" y1="43.561" x2="10.16" y2="43.561" width="0.4064" layer="16"/>
-<wire x1="16.08915625" y1="41.8846" x2="14.41275625" y2="43.561" width="0.4064" layer="16"/>
-<wire x1="38.1" y1="41.91" x2="22.03624375" y2="41.91" width="0.4064" layer="16"/>
-<wire x1="22.03624375" y1="41.91" x2="22.01084375" y2="41.8846" width="0.4064" layer="16"/>
-<wire x1="22.01084375" y1="41.8846" x2="16.08915625" y2="41.8846" width="0.4064" layer="16"/>
+<wire x1="38.1" y1="41.91" x2="36.83" y2="40.64" width="0.4064" layer="16"/>
+<wire x1="36.83" y1="40.64" x2="15.24" y2="40.64" width="0.4064" layer="16"/>
+<wire x1="15.24" y1="40.64" x2="12.7" y2="38.1" width="0.4064" layer="16"/>
+<wire x1="12.7" y1="38.1" x2="11.43" y2="38.1" width="0.4064" layer="16"/>
+<via x="11.43" y="38.1" extent="1-16" drill="0.35"/>
+<wire x1="11.43" y1="38.1" x2="10.16" y2="36.83" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="R5B" pad="2"/>
-<contactref element="U$2" pad="R"/>
+<contactref element="OUTPUT" pad="R"/>
 <wire x1="45.1" y1="48.26" x2="40.64" y2="48.26" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$11">
 <contactref element="R5A" pad="1"/>
-<contactref element="U$2" pad="T"/>
+<contactref element="OUTPUT" pad="T"/>
 <wire x1="45.1" y1="41.91" x2="40.64" y2="41.91" width="0.4064" layer="1"/>
 </signal>
+<signal name="N$8">
+<contactref element="LEFT" pad="2"/>
+<contactref element="VOL" pad="3A"/>
+<wire x1="6.35" y1="7.31" x2="1.27" y2="12.39" width="0.4064" layer="1"/>
+<wire x1="1.27" y1="12.39" x2="1.27" y2="54.61" width="0.4064" layer="1"/>
+<wire x1="1.27" y1="54.61" x2="5.08" y2="58.42" width="0.4064" layer="1"/>
+<wire x1="23.69" y1="58.42" x2="27.5" y2="54.61" width="0.4064" layer="1"/>
+<wire x1="5.08" y1="58.42" x2="23.69" y2="58.42" width="0.4064" layer="1"/>
+</signal>
+<signal name="N$12">
+<contactref element="RIGHT" pad="2"/>
+<contactref element="VOL" pad="3B"/>
+<wire x1="29.21" y1="24.13" x2="29.21" y2="50.4" width="0.4064" layer="1"/>
+<via x="29.21" y="24.13" extent="1-16" drill="0.35"/>
+<wire x1="29.21" y1="50.4" x2="27.5" y2="52.11" width="0.4064" layer="1"/>
+<wire x1="29.21" y1="24.13" x2="29.21" y2="12.7" width="0.4064" layer="16"/>
+<wire x1="23.82" y1="7.31" x2="22.86" y2="7.31" width="0.4064" layer="16"/>
+<wire x1="29.21" y1="12.7" x2="23.82" y2="7.31" width="0.4064" layer="16"/>
+</signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>
